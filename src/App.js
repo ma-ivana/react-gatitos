@@ -123,7 +123,10 @@ const App = () => {
 
     <section>
         <div className="containerTarjetas">
-          <Card info={gatos}/>
+          {
+            gatos.map((gato,i) => <Card key={i} info={gato}/>
+            )
+          }
         </div>
     </section>
 
