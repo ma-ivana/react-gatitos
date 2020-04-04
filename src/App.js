@@ -75,7 +75,15 @@ const App = () => {
     <section>
       <div className="containerTarjetas">
         {
-          gatos.map((gato,i) => <Card key={i} info={gato}/>
+          gatos.map((gato,i) => 
+          <Card
+            key={i}
+            name={gato.name}
+            shortDesc={gato.shortDesc}
+            img={gato.img}
+            disponible={gato.disponible}
+            longDesc={gato.longDesc}
+          />
           )
         }
       </div>

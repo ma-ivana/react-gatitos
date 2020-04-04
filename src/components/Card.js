@@ -1,22 +1,22 @@
 import React from 'react';
 import '../style/Card.scss';
 
-const Card = (props) => {
+const Card = ({name, shortDesc, img, disponible, longDesc}) => {
     
-    let disponible = props.info.disponible
+    let isAvailable = disponible
     ? '' 
     : 'cardDisabled'
 
     return (
       <>
-      <article className={`card ${disponible}`}>
-       <div className="imagenCh"> <img alt={props.info.name} src={props.info.img}/> </div>
+      <article className={`card ${isAvailable}`}>
+       <div className="imagenCh"> <img alt={name} src={img}/> </div>
        <div className="textoCh"> 
-       <h4>{props.info.name}</h4>
-       <p className="parrCh">{props.info.shortDesc}</p>
+       <h4>{name}</h4>
+       <p className="parrCh">{shortDesc}</p>
        <button id="info">
          {
-          props.info.disponible
+          disponible
           ? 'Ver más' 
           : 'No disp.'
           }
@@ -25,10 +25,10 @@ const Card = (props) => {
      </article>
 
      <div id="infoModal" className="modal nomostrar">
-      <div className="imagenGR"> <img alt={props.info.name} src={props.info.img}/> </div>
+      <div className="imagenGR"> <img alt={name} src={img}/> </div>
          <div className="modalcontent">
-           <h4 id="nombreGr">{props.info.name}</h4>
-           <p className="parrGr">{props.info.longDesc}</p>
+           <h4 id="nombreGr">{name}</h4>
+           <p className="parrGr">{longDesc}</p>
            <button id="cerrarModal">Cerrar</button>
          </div>
      </div>
