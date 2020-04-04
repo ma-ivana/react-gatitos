@@ -3,15 +3,13 @@ import '../style/Card.scss';
 
 const Card = (props) => {
     
+    let disponible = props.info.disponible
+    ? '' 
+    : 'cardDisabled'
+
     return (
       <>
-      <article className=
-        {
-          props.info.disponible 
-          ? 'card' 
-          : 'cardDisabled'
-        }
-      >
+      <article className={`card ${disponible}`}>
        <div className="imagenCh"> <img alt={props.info.name} src={props.info.img}/> </div>
        <div className="textoCh"> 
        <h4>{props.info.name}</h4>
