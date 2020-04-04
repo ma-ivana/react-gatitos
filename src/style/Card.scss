@@ -193,6 +193,52 @@ body {
 }
 }
 
+  .cardDisabled {      
+      width: 47%;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      margin: 1%;
+      overflow: hidden;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+      
+
+      .textoCh {
+       width: 47%;
+       height: 150px;
+       
+       background-color:rgb(194, 191, 191);
+       text-align: center;
+       box-sizing: content-box;
+       padding: 2%;
+       color: $colorBlanco;
+       
+
+          h4 {
+            margin-bottom: 0;
+          }
+
+          .parrCh {
+            font-size: 10px;
+          }
+      }
+
+      button {
+        @include botonBorderYColor; 
+        width: 70px;
+        height: 20px;
+      }
+
+      .imagenCh {
+        width: 50%;
+        height: auto;
+
+        img {
+        width: 100%;
+        }
+      }
+}
+
   
   .card {
     .textoCh:hover {

@@ -18,7 +18,8 @@ const gatos = [
     longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
     img: gatito1,
     pelaje: ["naranja", "blanco", "gris", "rayado"],
-    sexo: "macho"
+    sexo: "macho",
+    disponible: false
   },
 
   {
@@ -27,7 +28,8 @@ const gatos = [
     longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
     img: gatito2,
     pelaje: ["blanco"],
-    sexo: "hembra"
+    sexo: "hembra",
+    disponible: true
   },
 
   {
@@ -36,7 +38,8 @@ const gatos = [
     longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
     img: gatito3,
     pelaje: ["blanco", "gris", "rayado"],
-    sexo: "hembra"
+    sexo: "hembra",
+    disponible: true
   },
 
   {
@@ -45,7 +48,8 @@ const gatos = [
     longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
     img: gatito4,
     pelaje: ["naranja", "blanco", "negro", "rayado"],
-    sexo: "macho"
+    sexo: "macho",
+    disponible: true
   },
 
   {
@@ -54,7 +58,8 @@ const gatos = [
     longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
     img: gatito5,
     pelaje: ["negro"],
-    sexo: "macho"
+    sexo: "macho",
+    disponible: true
   }
 ]
 
