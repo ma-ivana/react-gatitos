@@ -19,7 +19,7 @@ const gatos = [
     img: gatito1,
     pelaje: ["naranja", "blanco", "gris", "rayado"],
     sexo: "macho",
-    disponible: false
+    isAvailable: false
   },
 
   {
@@ -29,7 +29,7 @@ const gatos = [
     img: gatito2,
     pelaje: ["blanco"],
     sexo: "hembra",
-    disponible: true
+    isAvailable: true
   },
 
   {
@@ -39,7 +39,7 @@ const gatos = [
     img: gatito3,
     pelaje: ["blanco", "gris", "rayado"],
     sexo: "hembra",
-    disponible: true
+    isAvailable: true
   },
 
   {
@@ -49,7 +49,7 @@ const gatos = [
     img: gatito4,
     pelaje: ["naranja", "blanco", "negro", "rayado"],
     sexo: "macho",
-    disponible: true
+    isAvailable: true
   },
 
   {
@@ -59,7 +59,7 @@ const gatos = [
     img: gatito5,
     pelaje: ["negro"],
     sexo: "macho",
-    disponible: true
+    isAvailable: true
   }
 ]
 
@@ -81,7 +81,7 @@ const App = () => {
             name={gato.name}
             shortDesc={gato.shortDesc}
             img={gato.img}
-            disponible={gato.disponible}
+            isAvailable={gato.isAvailable}
             longDesc={gato.longDesc}
           />
           )

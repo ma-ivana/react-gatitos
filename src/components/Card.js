@@ -1,26 +1,21 @@
 import React from 'react';
 import '../style/Card.scss';
+import Button from './Button';
 
-const Card = ({name, shortDesc, img, disponible, longDesc}) => {
+const Card = ({name, shortDesc, img, isAvailable, longDesc}) => {
     
-    let isAvailable = disponible
-    ? '' 
-    : 'cardDisabled'
+    let disponible = isAvailable ? '' : 'cardDisabled'
 
     return (
       <>
-      <article className={`card ${isAvailable}`}>
+      <article className={`card ${disponible}`}>
        <div className="imagenCh"> <img alt={name} src={img}/> </div>
        <div className="textoCh"> 
        <h4>{name}</h4>
        <p className="parrCh">{shortDesc}</p>
-       <button id="info">
-         {
-          disponible
-          ? 'Ver más' 
-          : 'No disp.'
-          }
-        </button>
+       <Button mensaje={isAvailable 
+        ? 'Ver más' 
+        : 'No disp.'}/>
        </div>
      </article>
 
